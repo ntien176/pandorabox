@@ -1,0 +1,15 @@
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\DatabaseIO2.dll.config
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\DatabaseIO2.dll
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\DatabaseIO2.pdb
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\Data_Provider.dll
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\EntityFramework.dll
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\EntityFramework.SqlServer.dll
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\Data_Provider.pdb
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\Data_Provider.dll.config
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\EntityFramework.xml
+D:\Company\WEB\PandoraWeb\DatabaseIO2\bin\Release\EntityFramework.SqlServer.xml
+D:\Company\WEB\PandoraWeb\DatabaseIO2\obj\Release\DatabaseIO2.csprojAssemblyReference.cache
+D:\Company\WEB\PandoraWeb\DatabaseIO2\obj\Release\DatabaseIO2.csproj.CoreCompileInputs.cache
+D:\Company\WEB\PandoraWeb\DatabaseIO2\obj\Release\DatabaseIO2.csproj.CopyComplete
+D:\Company\WEB\PandoraWeb\DatabaseIO2\obj\Release\DatabaseIO2.dll
+D:\Company\WEB\PandoraWeb\DatabaseIO2\obj\Release\DatabaseIO2.pdb

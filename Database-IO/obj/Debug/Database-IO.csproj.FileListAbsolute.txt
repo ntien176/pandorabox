@@ -1,0 +1,6 @@
+D:\Company\WEB\PandoraWeb\Database-IO\bin\Debug\Database-IO.dll
+D:\Company\WEB\PandoraWeb\Database-IO\bin\Debug\Database-IO.pdb
+D:\Company\WEB\PandoraWeb\Database-IO\obj\Debug\Database-IO.csprojAssemblyReference.cache
+D:\Company\WEB\PandoraWeb\Database-IO\obj\Debug\Database-IO.csproj.CoreCompileInputs.cache
+D:\Company\WEB\PandoraWeb\Database-IO\obj\Debug\Database-IO.dll
+D:\Company\WEB\PandoraWeb\Database-IO\obj\Debug\Database-IO.pdb

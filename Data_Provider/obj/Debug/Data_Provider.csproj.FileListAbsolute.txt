@@ -1,0 +1,12 @@
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\Data_Provider.dll.config
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\Data_Provider.dll
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\Data_Provider.pdb
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\EntityFramework.dll
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\EntityFramework.SqlServer.dll
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\EntityFramework.xml
+D:\Company\WEB\PandoraWeb\Data_Provider\bin\Debug\EntityFramework.SqlServer.xml
+D:\Company\WEB\PandoraWeb\Data_Provider\obj\Debug\Data_Provider.csprojAssemblyReference.cache
+D:\Company\WEB\PandoraWeb\Data_Provider\obj\Debug\Data_Provider.csproj.CoreCompileInputs.cache
+D:\Company\WEB\PandoraWeb\Data_Provider\obj\Debug\Data_Provider.csproj.CopyComplete
+D:\Company\WEB\PandoraWeb\Data_Provider\obj\Debug\Data_Provider.dll
+D:\Company\WEB\PandoraWeb\Data_Provider\obj\Debug\Data_Provider.pdb

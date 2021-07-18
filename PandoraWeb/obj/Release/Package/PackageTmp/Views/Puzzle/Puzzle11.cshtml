@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "Puzzle 11";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Data_Provider.we_users>
+<style>
+    .status-text {
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-parent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-frame {
+        max-width: 696px;
+        margin: 0 auto;
+    }
+
+    .container-frame-youtube {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<div class="container-md mt-lg-3">
+    <!-- Content here -->
+    <div class="text-center">
+        <h2>PUZZLE 11: THUỐC DẪN</h2>
+    </div>
+
+    <div class="container-frame">
+        <div class="container-frame-youtube">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/mCDjM8hvG2o"></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center align-self-center fw-bold" style="margin-top: 20px">
+                <p>Nhập đáp án của bạn: </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box-parent">
+                <input id="txtUID" style="display:none; max-width:300px" type="text" class="form-control">
+                <input id="txtPWD" style="max-width:250px; text-align: center" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="status-text">
+            <p id="ms11" style="margin: 0; color: red; display: block; text-align: center"></p>
+        </div>
+        <div class="row">
+            <div class="box-parent">
+                <button onclick="btnPuzzle11()" type="button" class="btn btn-outline-primary" style="width: 100px; margin-top: 0px">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var IsRunning = false;
+    function btnPuzzle11() {
+        if (!IsRunning) {
+            $('#ms11').html('');
+            IsRunning = true;
+            var uid = "puzzle11";
+            var pass = $('#txtPWD').val();
+            if (uid == '' || pass == '') {
+                $('#ms11').html("Vui lòng nhập đáp án!");
+                IsRunning = false;
+            } else {
+                var form = new FormData();
+                form.append("uid", uid);
+                form.append("pass", pass);
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", 'https://localhost:44310/Home/CheckPuzzle11', true);
+                xhr.timeout = 30000;
+                xhr.ontimeout = function () {
+                    $('#ms11').html('Lỗi kết nối!');
+                    IsRunning = false;
+                }
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var r = xhr.responseText;
+                        var j = JSON.parse(r);
+                        if (j.Data.status == "OK") {
+                            window.location = '/';
+                        } else {
+                            $('#ms11').html('Đáp án sai, xin nhập lại!');
+                        }
+                        IsRunning = false;
+                    }
+                }
+                xhr.send(form);
+            }
+        }
+    }
+</script>

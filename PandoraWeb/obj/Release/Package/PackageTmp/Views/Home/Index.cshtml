@@ -1,0 +1,93 @@
+﻿@*@model Data_Provider.we_users*@
+
+@* Trả về một list *@
+@model List<Data_Provider.we_users>
+@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .tableTest {
+        border-style: dashed
+    }
+
+    .btnStart {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+</style>
+<h1 style="text-align: center">WELCOME</h1>
+<div>
+    @*<table class="tableTest">
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Password</th>
+                <th>Name</th>
+            </tr>
+            @foreach (Data_Provider.we_users i in Model)
+            {
+                <tr>
+                    <td>@i.ID</td>
+                    <td>@i.Uid</td>
+                    <td>@i.Pwd</td>
+                    <td>@i.Fullname</td>
+                </tr>
+            }
+        </table>*@
+    <div class="row">
+        <div class="btnStart">
+            <button id="moveToPuzzle1" type="button" class="btn btn-outline-primary" style="margin: 30px auto; width: 100px;">Start</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="btnStart">
+            <button id="continueGame" type="button" class="btn btn-outline-primary" style="margin: 30px auto; width: 100px;">Continue</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#moveToPuzzle1").click(function () {
+        localStorage.setItem("step", "0");
+        window.location = '@Url.Action("Index","Puzzle")';
+    })
+    $("#continueGame").click(function () {
+        var step = localStorage.getItem("step");
+        switch (step) {
+            case "0":
+                window.location = '@Url.Action("Index","Puzzle")';
+                break;
+            case "1":
+                window.location = '@Url.Action("Puzzle2", "Puzzle")';
+                break;
+            case "2":
+                window.location = '@Url.Action("Puzzle3", "Puzzle")';
+                break;
+            case "3":
+                window.location = '@Url.Action("Puzzle4", "Puzzle")';
+                break;
+            case "4":
+                window.location = '@Url.Action("Puzzle5", "Puzzle")';
+                break;
+            case "5":
+                window.location = '@Url.Action("Puzzle6", "Puzzle")';
+                break;
+            case "6":
+                window.location = '@Url.Action("Puzzle7", "Puzzle")';
+                break;
+            case "7":
+                window.location = '@Url.Action("Puzzle8", "Puzzle")';
+                break;
+            case "8":
+                window.location = '@Url.Action("Puzzle9", "Puzzle")';
+                break;
+            case "9":
+                window.location = '@Url.Action("Puzzle10", "Puzzle")';
+                break;
+            case "10":
+                window.location = '@Url.Action("Puzzle11", "Puzzle")';
+                break;
+
+        }
+    })
+</script>
